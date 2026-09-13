@@ -25,6 +25,10 @@
 
 ## 후속 단계
 
+초기 구현 상태: 환경/업무 core/계약 CLI/3화면을 각기 커밋했다. JVM·Native 공통 테스트, Desktop UI 테스트,
+Android 실행, iOS XCUITest까지 확인했으며 자세한 근거는 [검증 결과](validation.md)에 기록한다.
+자동 코드 수정 루프와 전체 모바일 UX gate는 아직 완료되지 않았다.
+
 - P0 잔여: Hot Reload MCP로 입력/캡처/실제 reload 검증
 - P2: 원본 디자인 입력, 큰 글씨·모든 상태 gallery 검토, 플랫폼별 baseline 승인
 - P3: 버전 handshake, revision, await, fixture, events 프로토콜 및 실제 UI driver; engineering / UX-observer 권한 분리

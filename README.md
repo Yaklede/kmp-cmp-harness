@@ -20,10 +20,20 @@ Android SDK 위치를 `local.properties`의 `sdk.dir` 또는 `ANDROID_HOME`으�
 ./gradlew :desktopApp:run
 ./gradlew :androidApp:assembleDebug
 ./gradlew :core:jvmTest :harness-cli:test
+./gradlew :sharedUI:jvmTest
 ./gradlew :sharedUI:compileKotlinIosSimulatorArm64
 cd iosApp
 xcodegen generate
 xcodebuild -project HarnessSample.xcodeproj -scheme HarnessSample -sdk iphonesimulator -configuration Debug CODE_SIGNING_ALLOWED=NO build
 ```
 
+```sh
+./harness scenario --fixture fixtures/payment-response-lost.json
+./harness inspect-ui --observation fixtures/ui/keyboard-obscured.json
+```
+
+첫 명령은 L0 로직 검증과 증거를 생성합니다. 두 번째는 심어 둔 결함을 검출하고 exit 1로 끝나는 것이 기대 결과입니다.
+전체 native/visual 판정은 CLI driver가 연결되지 않아 `NOT_RUN`입니다.
+
 설계와 단계별 상태는 [구현 계획](docs/implementation-plan.md), 버전 선택은 [도구 체인](docs/toolchain.md)을 참고합니다.
+[검증 CLI](docs/harness.md), [디자인 시스템](docs/design-system.md), [검증 결과와 재현](docs/validation.md)도 함께 제공합니다.
