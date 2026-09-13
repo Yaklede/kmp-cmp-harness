@@ -5,6 +5,10 @@ local.properties
 .idea/
 .DS_Store
 artifacts/
-iosApp/*.xcodeproj/
-iosApp/*.xcworkspace/
+**/*.xcodeproj/
+**/*.xcworkspace/
 *.xcuserstate
+
+/dist/
+__pycache__/
+node_modules/

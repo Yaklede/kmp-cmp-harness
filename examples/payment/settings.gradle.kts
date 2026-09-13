@@ -4,5 +4,5 @@ pluginManagement {
 dependencyResolutionManagement {
     repositories { google(); mavenCentral() }
 }
-rootProject.name = "kmp-cmp-harness"
+rootProject.name = "harness-payment-example"
 include(":core", ":sharedUI", ":androidApp", ":desktopApp", ":harness-cli")
