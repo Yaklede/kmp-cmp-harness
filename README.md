@@ -1,0 +1,47 @@
+# UX Loop Harness
+
+**기존 프로젝트의 AI 개발 작업에 적용하는, 제약조건만 담은 OpenDock 패키지입니다.**
+디자인 해석 → 구현 → 실행 검증 → 수정의 기준을 제공하며 프레임워크나 앱 구조를 강제하지 않습니다.
+KMP/CMP에서 출발했지만 웹, 네이티브 앱, 다른 크로스플랫폼 프로젝트에도 공통 규칙을 적용합니다.
+
+## 배포 경계
+
+| 경로 | 역할 | 대상 프로젝트에 설치 |
+| --- | --- | --- |
+| `dock/files/ENTRYPOINT.md` | AGENTS / CLAUDE / GEMINI 진입 지침 | 각 파일의 OpenDock 관리 블록 |
+| `dock/files/constraints/` | 프로젝트 탐색, UX, 구조, 검증, 수정 제약 | `.harness/ux-loop/` |
+| `dock/dock.yml`, `dock/DOCK.md` | OpenDock manifest와 Hub 소개 | 소개 문서는 Hub에만 표시 |
+| `scripts/`, `tests/` | 이 저장소의 패키징·호환성 검증 도구 | 제외 |
+| `examples/payment/` | 선택적 KMP/CMP 결제 앱과 샘플 전용 CLI | 제외 |
+
+설치되는 것은 Markdown 제약 문서와 MIT 라이선스뿐입니다. SDK, 실행 파일, 프로젝트 템플릿,
+설치 명령, MCP 서버, Gradle 설정을 포함하지 않습니다. 실제 테스트와 UI 조작은 대상 프로젝트의
+기존 도구를 사용합니다. 지침의 설치가 자동 검증기 설치나 UX 품질의 보장을 뜻하지는 않습니다.
+
+## 적용 방식
+
+에이전트는 기존 프로젝트 지침과 구조를 먼저 확인하고, 요청된 작업에 필요한 규칙만 읽습니다.
+원본 디자인과 승인된 기준을 보존하면서 의도·동작·접근성·플랫폼 검증을 연결합니다.
+KMP/CMP 전용 규칙은 실제 해당 소스셋이 있을 때만 적용합니다.
+
+프로젝트별 정책은 OpenDock 관리 블록 밖의 기존 지침에 적습니다. 이미 받은 사용자 승인과
+프로젝트의 빌드·테스트·배포 관례를 유지하며, 결제 정책이나 새로운 화면 흐름을 임의로 만들지 않습니다.
+
+## 개발 및 배포 준비
+
+이 저장소의 검증·패키징 도구에만 Bun이 필요합니다.
+
+```sh
+bun install --frozen-lockfile
+bun run check
+bun run release:prepare
+```
+
+배포 절차와 공식 OpenDock 구현을 사용하는 통합 검증은 [배포 안내](docs/publishing.md)를 참고합니다.
+Hub 검토 제출과 공개 릴리스는 별도 단계이며 이 저장소를 clone한 것만으로 Hub에 등록되지 않습니다.
+
+결제 예제를 실행하려면 [예제 README](examples/payment/README.md)를 참고합니다.
+이 저장소의 변경은 의미 있는 단위로 커밋하고, 검증 후 `main` 병합과 `origin/main` push까지 완료합니다.
+이 유지보수 규칙을 설치 대상 프로젝트의 브랜치·배포 정책으로 강제하지 않습니다.
+
+MIT licensed. [LICENSE](LICENSE)

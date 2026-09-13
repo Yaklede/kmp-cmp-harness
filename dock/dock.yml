@@ -1,0 +1,35 @@
+opendock: 1
+name: UX Loop Harness
+summary: Portable design, UX, verification, and repair constraints for existing AI-assisted projects. Instructions only; conditional KMP/CMP guidance included.
+readme: DOCK.md
+tags:
+  - ux
+  - harness
+  - ai-agent
+  - design
+  - verification
+  - kmp
+  - compose
+files:
+  - from: files/ENTRYPOINT.md
+    to: AGENTS.md
+  - from: files/ENTRYPOINT.md
+    to: CLAUDE.md
+  - from: files/ENTRYPOINT.md
+    to: GEMINI.md
+  - from: files/constraints/README.md
+    to: .harness/ux-loop/README.md
+  - from: files/constraints/project.md
+    to: .harness/ux-loop/project.md
+  - from: files/constraints/design-ux.md
+    to: .harness/ux-loop/design-ux.md
+  - from: files/constraints/architecture.md
+    to: .harness/ux-loop/architecture.md
+  - from: files/constraints/verification.md
+    to: .harness/ux-loop/verification.md
+  - from: files/constraints/repair-delivery.md
+    to: .harness/ux-loop/repair-delivery.md
+  - from: files/constraints/kmp-cmp.md
+    to: .harness/ux-loop/kmp-cmp.md
+  - from: files/constraints/LICENSE.txt
+    to: .harness/ux-loop/LICENSE.txt
