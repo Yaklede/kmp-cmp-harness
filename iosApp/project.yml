@@ -7,6 +7,7 @@ settings:
   base:
     SWIFT_VERSION: "5.0"
     ENABLE_USER_SCRIPT_SANDBOXING: NO
+    ARCHS: arm64
 targets:
   HarnessSample:
     type: application
@@ -15,9 +16,8 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: dev.harness.sample
-        GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
-        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: Info.plist
         FRAMEWORK_SEARCH_PATHS: "$(inherited) $(SRCROOT)/../sharedUI/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)"
         OTHER_LDFLAGS: "$(inherited) -framework HarnessUI"
     preBuildScripts:
@@ -26,8 +26,21 @@ targets:
           cd "$SRCROOT/.."
           ./gradlew :sharedUI:embedAndSignAppleFrameworkForXcode
         basedOnDependencyAnalysis: false
+  HarnessSmokeTests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [Tests]
+    dependencies:
+      - target: HarnessSample
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.harness.smoketests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: HarnessSample
 schemes:
   HarnessSample:
     build:
       targets:
         HarnessSample: all
+    test:
+      targets: [HarnessSmokeTests]
