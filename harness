@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+cd "$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+./gradlew --console=plain -q :harness-cli:installDist >&2
+exec ./harness-cli/build/install/harness-cli/bin/harness-cli "$@"

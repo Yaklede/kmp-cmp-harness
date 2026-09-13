@@ -1,0 +1,1 @@
+{"id":"payment-offline","scenario":"Offline","expectedPhase":"AwaitingConfirmation","lookupAfterUnknown":true,"rapidClicks":1}

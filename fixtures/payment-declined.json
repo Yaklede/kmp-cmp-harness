@@ -1,0 +1,1 @@
+{"id":"payment-declined","scenario":"Declined","expectedPhase":"FailedKnown","lookupAfterUnknown":false,"rapidClicks":1}

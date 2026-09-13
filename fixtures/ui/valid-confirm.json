@@ -1,0 +1,10 @@
+{
+  "screenId":"payment.confirm","platform":"Android","source":"Synthetic","evidenceId":"fixtures/ui/valid-confirm.json",
+  "viewport":{"x":0,"y":0,"width":390,"height":800},"phase":"Ready",
+  "nodes":[
+    {"id":"amount","text":"500,000원","label":"500,000원","bounds":{"x":24,"y":160,"width":300,"height":60}},
+    {"id":"recipient","text":"샘플 임대인","label":"샘플 임대인","bounds":{"x":24,"y":260,"width":300,"height":48}},
+    {"id":"paymentMethod","text":"테스트 카드","label":"테스트 카드","bounds":{"x":24,"y":320,"width":300,"height":48}},
+    {"id":"submit","text":"500,000원 결제하기","label":"500,000원 결제하기","bounds":{"x":24,"y":700,"width":342,"height":56},"interactive":true,"action":"payment.submit"}
+  ]
+}

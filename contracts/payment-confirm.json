@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "screenId": "payment.confirm",
+  "pattern": "payment_confirmation",
+  "requiredInformation": ["amount", "recipient", "paymentMethod"],
+  "requiredStates": ["Ready", "Submitting", "Succeeded", "FailedKnown", "AwaitingConfirmation"],
+  "allowResubmitWhenUnknown": false,
+  "originalReference": null,
+  "approvedBaselines": {},
+  "unresolvedPolicies": []
+}

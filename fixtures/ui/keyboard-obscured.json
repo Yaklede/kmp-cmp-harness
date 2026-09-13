@@ -1,0 +1,11 @@
+{
+  "screenId":"payment.confirm","platform":"Android","source":"Synthetic","evidenceId":"fixtures/ui/keyboard-obscured.json",
+  "viewport":{"x":0,"y":0,"width":390,"height":800},"phase":"AwaitingConfirmation",
+  "occlusions":[{"x":0,"y":500,"width":390,"height":300}],
+  "nodes":[
+    {"id":"amount","text":"500,000원","label":"500,000원","bounds":{"x":24,"y":160,"width":300,"height":60},"clipped":true},
+    {"id":"recipient","text":"샘플 임대인","label":"샘플 임대인","bounds":{"x":24,"y":260,"width":300,"height":48}},
+    {"id":"paymentMethod","text":"테스트 카드","label":"테스트 카드","bounds":{"x":24,"y":320,"width":300,"height":48}},
+    {"id":"submit","text":"다시 결제","label":"진행","bounds":{"x":24,"y":700,"width":342,"height":32},"interactive":true,"action":"payment.submit"}
+  ]
+}

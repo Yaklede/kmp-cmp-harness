@@ -1,0 +1,1 @@
+{"id":"payment-response-lost","scenario":"ResponseLost","expectedPhase":"Succeeded","lookupAfterUnknown":true,"rapidClicks":20}
