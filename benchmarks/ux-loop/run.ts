@@ -16,6 +16,9 @@ const repetitions = Number(option("repetitions", "2"));
 const timeoutSeconds = Number(option("timeout-seconds", "240"));
 const model = option("model", "gpt-6-astra");
 const effort = option("effort", "xhigh");
+const codex = option("codex-bin", "codex");
+const catalog = JSON.parse(execFileSync(codex, ["debug", "models", "--bundled"], { encoding: "utf8" }));
+assert(catalog.models.some(m => m.slug === model), "The selected CLI does not list this model; use a compatible --codex-bin before starting any sessions");
 assert(Number.isInteger(repetitions) && repetitions >= 1 && repetitions <= 5);
 assert(Number.isFinite(timeoutSeconds) && timeoutSeconds > 0 && timeoutSeconds <= 600);
 const output = resolve(option("output", join(repo, "artifacts/ab", new Date().toISOString().replaceAll(":", "-"))));
@@ -37,7 +40,7 @@ const manifest = {
   startedAt: new Date().toISOString(), model, effort, repetitions, timeoutSeconds, concurrency: 2,
   sourceCommit: execFileSync("git", ["rev-parse", "HEAD"], { cwd: repo, encoding: "utf8" }).trim(),
   sourceDirty: Boolean(execFileSync("git", ["status", "--porcelain"], { cwd: repo, encoding: "utf8" }).trim()),
-  codexVersion: execFileSync("codex", ["--version"], { encoding: "utf8" }).trim(),
+  codexVersion: execFileSync(codex, ["--version"], { encoding: "utf8" }).trim(),
   bunVersion: Bun.version, hostPlatform: process.platform, hostArchitecture: process.arch,
   protocol: sha256(readFileSync(join(benchmarkRoot, "PROTOCOL.md"))),
   benchmarkInputs: fileHashes(benchmarkRoot), dockInputs: fileHashes(dockRoot),
@@ -84,7 +87,7 @@ async function agentRun(task: string, arm: string, repetition: number) {
   const stdout = openSync(outPath, "w"); const stderr = openSync(errPath, "w");
   const started = performance.now(); let timedOut = false;
   console.log(`START ${runId}`);
-  const child = spawn("codex", args, { cwd: workspace, stdio: ["pipe", stdout, stderr], detached: process.platform !== "win32" });
+  const child = spawn(codex, args, { cwd: workspace, stdio: ["pipe", stdout, stderr], detached: process.platform !== "win32" });
   let hardStop: ReturnType<typeof setTimeout> | undefined;
   const stop = () => {
     timedOut = true;
@@ -119,7 +122,7 @@ async function agentRun(task: string, arm: string, repetition: number) {
     } catch (error) { evaluatorError = String(error); }
   }
   const result = { runId, task, arm, repetition, workspace, agentStatus, exit, elapsedSeconds, events,
-    integrityViolations, checks, evaluatorError, promptHash: sha256(commonPrompt), baselineHashes, afterHashes: after, command: ["codex", ...args] };
+    integrityViolations, checks, evaluatorError, promptHash: sha256(commonPrompt), baselineHashes, afterHashes: after, command: [codex, ...args] };
   writeFileSync(join(runDir, "result.json"), JSON.stringify(result, null, 2));
   writeFileSync(join(runDir, "changes.diff"), execFileSync("git", ["diff", "HEAD"], { cwd: workspace }));
   if (existsSync(join(workspace, "FINAL_RESPONSE.md"))) cpSync(join(workspace, "FINAL_RESPONSE.md"), join(runDir, "final-response.md"));

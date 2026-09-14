@@ -68,3 +68,13 @@ Benchmark tooling is outside `dock/` and cannot enter the OpenDock payload.
 
 CLI usage event reference: [official non-interactive mode documentation](https://learn.chatgpt.com/docs/non-interactive-mode).
 Configuration reference: [official configuration documentation](https://learn.chatgpt.com/docs/config-file/config-reference).
+
+## Infrastructure amendment before any completed model task
+
+The initial system CLI 0.149.1 rejected Astra with an HTTP 400 requiring a newer CLI. Both attempted
+sessions ended without a completed model turn or usage record and were not graded. They remain in
+`artifacts/ab/pilot-2026-09-14` and are excluded from the 12 measured runs, not counted as product
+failures or zero-token executions. No task output was available for prompt/evaluator tuning.
+The runner now checks the CLI's bundled model catalog before launching, and accepts `--codex-bin`.
+The measured pilot uses the existing app's CLI 0.154.0-alpha.6.2 via this option. No global CLI
+installation, model, treatment, task requirement, evaluator, or 240-second budget was changed.
