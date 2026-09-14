@@ -1,0 +1,1518 @@
+{
+  "manifest": {
+    "startedAt": "2026-09-14T00:40:40.884Z",
+    "model": "gpt-6-astra",
+    "effort": "xhigh",
+    "repetitions": 2,
+    "timeoutSeconds": 240,
+    "concurrency": 2,
+    "sourceCommit": "b346bda482619750f9eb1fcaa76178deae72887d",
+    "sourceDirty": false,
+    "codexVersion": "codex-cli 0.154.0-alpha.6.2",
+    "bunVersion": "1.3.14",
+    "hostPlatform": "darwin",
+    "hostArchitecture": "arm64",
+    "protocol": "b174e5dce64a50d610b0286fffefaaf5f36ef49e8397be10ef1911d1e96e4548",
+    "benchmarkInputs": {
+      "grade.ts": "fda148cc432b94f9fa2f8056fd93b8c98dd14733e3e55ef6346f17dc6bcdca1f",
+      "tests/benchmark.test.ts": "0b2c763369edb1af5b28989c013769682434d0a930f9ca2082aebf73e8ace1d3",
+      "tests/reference/index.html": "2fc33363eaf4e576ec999cf99d7c0825579a5f9e000310cfcb6783f1c570f058",
+      "tests/reference/gates.js": "17b41090a2f052ae592a968ace5c8452acc22edd79f2604a0b6499a7a84a8fc0",
+      "tests/reference/editor.js": "9cc3f86b90821dff048a36f03072c7ac7ab73a2428c5a123194c2a38a0a10126",
+      "tests/reference/app.js": "ba121c25a704c4cb52c4ba2695ead9a3f53c48550108fd9078b99f861cfe39c0",
+      "bun.lock": "4c3fa7de1219f83cb666fc63e62d48c928f7a6253d52f71f97daf8ec15ad635b",
+      "package.json": "46fc122f0787a5d7fc57cf65dd538eb809837f85345e2d418e95c9199defb38b",
+      "fixtures/gates/gates.js": "69167361f5b3760770763ea4bb8cce994c6c66ca629fd1ae6eaf1caeeebac200",
+      "fixtures/gates/README.md": "6d0ed8b7a175ae5bed5d9f6c1dfb95f31a0b065f11dca43c2d4fa61df99bd3fa",
+      "fixtures/gates/package.json": "6697adaac93a05bd93c8e573e9b49f69a09faba1a3985d69b47c0e86762190d8",
+      "fixtures/gates/gates.test.js": "0f409167ca25bb86da36f0e74357c918bf95a856b96a288620b119708ab15cd8",
+      "fixtures/gates/AGENTS.md": "912fe6fc9729b9ac18ce76e28e4e8e863797fc54ab21183e8be2807f3666d3ca",
+      "fixtures/form/reference.svg": "6c99ecadaeaf8b5613178b457d063e8a2608c7129ea90040fda201c167759f47",
+      "fixtures/form/index.html": "d43e2a0ba2c561dcb86f88a0ecdedce975a75a1494c4288f7dc228c7d4aa8500",
+      "fixtures/form/README.md": "05a219c5539d29c00c98eb2c4fa77266bb853fca48dac0a26ab7774d4edf0b3d",
+      "fixtures/form/smoke.test.js": "430c81a51b4979e0b8bdf145bf0aab8e924c7375c0ad930566bd0bf63d9df265",
+      "fixtures/form/package.json": "c06ed2e9629193b76af2b830b21a9256e1eef2e8fc0cdd984fca3ae93dbb0440",
+      "fixtures/form/AGENTS.md": "b165b83fcbb1c2610dd76005bf74448fa40964b0fdeb5b914461e90ccd85d2f9",
+      "fixtures/form/app.js": "32245669cdb5a849443c3b4ad57b5a337b9b63837cfab37c6c23ce06b6418668",
+      "fixtures/editor/README.md": "d31011a7b7d83cbca15197530433b4b78ab9513b5a8b5d05bf3a990bef61bc7d",
+      "fixtures/editor/editor.js": "0298aae7e576eb1a3b77a4e5cd9da3841a779e1232d45eaa2274d023adc9dcfa",
+      "fixtures/editor/package.json": "70a7f8315a5c33e87f37d60c1d7d9a9fff2236f52ba96279fc0d19aa93babf85",
+      "fixtures/editor/AGENTS.md": "d433eb5803f417d752421d706ddb4e2599ca9ea3c22ff6924033ffd784dc57b4",
+      "fixtures/editor/editor.test.js": "9e95cbdd137b409adab968b000abc87c79d2f744aecd9dbfa33e0bcc1e64f644",
+      "metrics.ts": "65c07b85a51672bcbedacc8bde2227ede48b803eeccfc2e64eaedd54090515be",
+      "run.ts": "ff3c0077c4364298264a25d789eac0280ab8fb59b377a424d4338b729fd555c0",
+      "PROTOCOL.md": "b174e5dce64a50d610b0286fffefaaf5f36ef49e8397be10ef1911d1e96e4548"
+    },
+    "dockInputs": {
+      "dock.yml": "b8b618b8a4f49b1a030c0e4d996e000f90b6f8fadf1ee7d3f7af827d12e59aaf",
+      "files/constraints/architecture.md": "9dce873922ef272c90c8ebac5055b1fa84850e94fa58871ed55fd2e31b4173d4",
+      "files/constraints/repair-delivery.md": "b0d50e210e49cddeb2f5a54f471a8d15db5caef571d238f7713cd61140ecc071",
+      "files/constraints/project.md": "e927138936e9df52ea57639649772bf3d4b9a4e06c34e1fa720887328a6473b4",
+      "files/constraints/README.md": "b961728a055e5c9675ddf08707857eccd27f85fec22b54608d2d8f42e04a4ab5",
+      "files/constraints/verification.md": "15c1f77980e62889486b1aaa4ce7533c76f5fb847decd8dc4c0bb40aa54329b0",
+      "files/constraints/LICENSE.txt": "0604630a7afbb133db80c0cab9f8687feab7b542bb4fb6001397f09ddfafe2bd",
+      "files/constraints/kmp-cmp.md": "df755f66f8904ee9b64562bf000e5753dc137105915c69d82e59b0b7c9944afd",
+      "files/constraints/design-ux.md": "87f085ef4e4c5ae1134c91a657c2a6c9e31b686542cf331eb7cfb38694979ab9",
+      "files/ENTRYPOINT.md": "bcaa59e001382ca9cd2dde6451f35a175ea8b12e5d802c88efbaccabf93de748",
+      "DOCK.md": "1bbf104be7fe226f1a28ef57db859c6f8c130e89389bbe0395f247a2160af170"
+    },
+    "independentRuns": 12,
+    "design": "Matched task/repetition, two arms per pair, reversed launch order",
+    "notes": [
+      "Fresh sessions, no inherited conversation",
+      "Built-in skill metadata may remain common to both arms",
+      "Hidden grader is not provided to sessions; host read isolation is procedural",
+      "Not a general-project or human usability benchmark"
+    ]
+  },
+  "completion": {
+    "finishedAt": "2026-09-14T01:04:12.170Z",
+    "expected": 12,
+    "recorded": 12,
+    "status": "COMPLETE"
+  },
+  "summary": {
+    "control": {
+      "attempts": 6,
+      "gradedRuns": 6,
+      "passedChecks": 60,
+      "totalChecks": 60,
+      "checkPassRate": 1,
+      "completeTasks": 4,
+      "timeouts": 2,
+      "infrastructureErrors": 0,
+      "integrityViolations": 0,
+      "medianSeconds": 199.803783812,
+      "meanSeconds": 204.82205097183336,
+      "usageAccountedRuns": 4,
+      "meanInputTokens": 82593.5,
+      "meanCachedInputTokens": 54240,
+      "meanOutputTokens": 5321.5,
+      "meanTotalTokens": 87915,
+      "meanCommandCalls": 8.833333333333334,
+      "byTask": {
+        "editor": {
+          "passed": 20,
+          "total": 20,
+          "runs": 2
+        },
+        "form": {
+          "passed": 20,
+          "total": 20,
+          "runs": 2
+        },
+        "gates": {
+          "passed": 20,
+          "total": 20,
+          "runs": 2
+        }
+      }
+    },
+    "harness": {
+      "attempts": 6,
+      "gradedRuns": 6,
+      "passedChecks": 60,
+      "totalChecks": 60,
+      "checkPassRate": 1,
+      "completeTasks": 4,
+      "timeouts": 2,
+      "infrastructureErrors": 0,
+      "integrityViolations": 0,
+      "medianSeconds": 237.79517350000003,
+      "meanSeconds": 234.474547139,
+      "usageAccountedRuns": 4,
+      "meanInputTokens": 123463.5,
+      "meanCachedInputTokens": 99936,
+      "meanOutputTokens": 6411.5,
+      "meanTotalTokens": 129875,
+      "meanCommandCalls": 10.333333333333334,
+      "byTask": {
+        "editor": {
+          "passed": 20,
+          "total": 20,
+          "runs": 2
+        },
+        "form": {
+          "passed": 20,
+          "total": 20,
+          "runs": 2
+        },
+        "gates": {
+          "passed": 20,
+          "total": 20,
+          "runs": 2
+        }
+      }
+    }
+  },
+  "paired": [
+    {
+      "task": "editor",
+      "repetition": 1,
+      "checkDifference": 0,
+      "elapsedSecondsDifference": 46.91714429200002,
+      "totalTokenDifference": 28053
+    },
+    {
+      "task": "editor",
+      "repetition": 2,
+      "checkDifference": 0,
+      "elapsedSecondsDifference": 53.02417225100007,
+      "totalTokenDifference": 40132
+    },
+    {
+      "task": "form",
+      "repetition": 1,
+      "checkDifference": 0,
+      "elapsedSecondsDifference": -0.004822540999981584,
+      "totalTokenDifference": null
+    },
+    {
+      "task": "form",
+      "repetition": 2,
+      "checkDifference": 0,
+      "elapsedSecondsDifference": 0.006626958999788712,
+      "totalTokenDifference": null
+    },
+    {
+      "task": "gates",
+      "repetition": 1,
+      "checkDifference": 0,
+      "elapsedSecondsDifference": 59.09807462500001,
+      "totalTokenDifference": 74237
+    },
+    {
+      "task": "gates",
+      "repetition": 2,
+      "checkDifference": 0,
+      "elapsedSecondsDifference": 18.873781417000004,
+      "totalTokenDifference": 25418
+    }
+  ],
+  "runs": [
+    {
+      "runId": "editor-1-control",
+      "task": "editor",
+      "arm": "control",
+      "repetition": 1,
+      "agentStatus": "COMPLETED",
+      "elapsedSeconds": 169.29186045799997,
+      "events": {
+        "usage": {
+          "input_tokens": 78552,
+          "cached_input_tokens": 44800,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4660,
+          "reasoning_output_tokens": 1079
+        },
+        "completed": true,
+        "commandCalls": 14,
+        "toolCalls": 14,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "trimmed_payload_preserved_draft",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "observable_pending_state",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "duplicate_submit_suppression",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "failure_preserves_input_and_explicit_retry",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "late_response_does_not_overwrite_edits",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "blank_input_stops_request",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "snapshot_cannot_mutate_store",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "unknown_outcome_does_not_resubmit",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "reconcile_uses_lookup_and_blocks_submit",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "lookup_failure_and_pending_remain_unknown",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "README.md": "d31011a7b7d83cbca15197530433b4b78ab9513b5a8b5d05bf3a990bef61bc7d",
+        "editor.js": "0298aae7e576eb1a3b77a4e5cd9da3841a779e1232d45eaa2274d023adc9dcfa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "70a7f8315a5c33e87f37d60c1d7d9a9fff2236f52ba96279fc0d19aa93babf85",
+        "AGENTS.md": "d433eb5803f417d752421d706ddb4e2599ca9ea3c22ff6924033ffd784dc57b4",
+        "editor.test.js": "9e95cbdd137b409adab968b000abc87c79d2f744aecd9dbfa33e0bcc1e64f644"
+      },
+      "afterHashes": {
+        "editor.behavior.test.js": "0e3042967b260f3b422063375f945a854843049f82b9ceca78d030df99169edc",
+        "FINAL_RESPONSE.md": "ff58d17a0491da4e30e7570f9822ecda3f0748c7e2ff2bf23efe693e346ed3cd",
+        "README.md": "d31011a7b7d83cbca15197530433b4b78ab9513b5a8b5d05bf3a990bef61bc7d",
+        "editor.js": "a066203d0ccb7d9d66f14c2b995092ace33832db8bce5919a0750c404a09c665",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "70a7f8315a5c33e87f37d60c1d7d9a9fff2236f52ba96279fc0d19aa93babf85",
+        "AGENTS.md": "d433eb5803f417d752421d706ddb4e2599ca9ea3c22ff6924033ffd784dc57b4",
+        "editor.test.js": "9e95cbdd137b409adab968b000abc87c79d2f744aecd9dbfa33e0bcc1e64f644"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "abed8ba800daec30f5cbf469add4b9eb055a5acafdd005ef27f79b6e51c40a8a",
+        "stderr.txt": "5b4af278c6d72e89219c7f0abfb950c11f82e283ba91540870a20c9e47f4ca47",
+        "changes.diff": "9449dd7f9dbfef70cbbbad3c77c6e9da32e9710753e985f6995ecc403c9cd0f7",
+        "final-response.md": "ff58d17a0491da4e30e7570f9822ecda3f0748c7e2ff2bf23efe693e346ed3cd"
+      }
+    },
+    {
+      "runId": "editor-1-harness",
+      "task": "editor",
+      "arm": "harness",
+      "repetition": 1,
+      "agentStatus": "COMPLETED",
+      "elapsedSeconds": 216.20900475,
+      "events": {
+        "usage": {
+          "input_tokens": 104959,
+          "cached_input_tokens": 81920,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6306,
+          "reasoning_output_tokens": 1327
+        },
+        "completed": true,
+        "commandCalls": 11,
+        "toolCalls": 11,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "trimmed_payload_preserved_draft",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "observable_pending_state",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "duplicate_submit_suppression",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "failure_preserves_input_and_explicit_retry",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "late_response_does_not_overwrite_edits",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "blank_input_stops_request",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "snapshot_cannot_mutate_store",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "unknown_outcome_does_not_resubmit",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "reconcile_uses_lookup_and_blocks_submit",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "lookup_failure_and_pending_remain_unknown",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "README.md": "d31011a7b7d83cbca15197530433b4b78ab9513b5a8b5d05bf3a990bef61bc7d",
+        "editor.js": "0298aae7e576eb1a3b77a4e5cd9da3841a779e1232d45eaa2274d023adc9dcfa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "70a7f8315a5c33e87f37d60c1d7d9a9fff2236f52ba96279fc0d19aa93babf85",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "6e66a5ab0ed5882a8bda85fad3efe4a1ab6917fb7fa9bfaa06d3daa984ae965b",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84",
+        "editor.test.js": "9e95cbdd137b409adab968b000abc87c79d2f744aecd9dbfa33e0bcc1e64f644"
+      },
+      "afterHashes": {
+        "editor.behavior.test.js": "08f0565636d124f0178a8278c1339dd23c42182b28b7614601208e7482162ba6",
+        "FINAL_RESPONSE.md": "88ce7d8dc369ecadf985cb5a3fa8d2e3e950be9189392a405d39f1c1f2d3a3a6",
+        "README.md": "d31011a7b7d83cbca15197530433b4b78ab9513b5a8b5d05bf3a990bef61bc7d",
+        "editor.js": "f2908780d1dc0f5211debdfb46573844bfdc1611e7ffb40326980ef508e61141",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "70a7f8315a5c33e87f37d60c1d7d9a9fff2236f52ba96279fc0d19aa93babf85",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "6e66a5ab0ed5882a8bda85fad3efe4a1ab6917fb7fa9bfaa06d3daa984ae965b",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84",
+        "editor.test.js": "9e95cbdd137b409adab968b000abc87c79d2f744aecd9dbfa33e0bcc1e64f644"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "48604cbf4e3f41f781566397135703dd28df5222cc4ce4e53ef682b39acb7de9",
+        "stderr.txt": "0b16d5f443f281c523b2fb02b841c63b4baa4f316e45adb238b4a309ec5260ee",
+        "changes.diff": "0118202248d09d7c89ba918602e70044ba4b0136ebda3345403b409900dc4f68",
+        "final-response.md": "88ce7d8dc369ecadf985cb5a3fa8d2e3e950be9189392a405d39f1c1f2d3a3a6"
+      }
+    },
+    {
+      "runId": "form-1-control",
+      "task": "form",
+      "arm": "control",
+      "repetition": 1,
+      "agentStatus": "TIMEOUT",
+      "elapsedSeconds": 240.010777541,
+      "events": {
+        "usage": null,
+        "completed": false,
+        "commandCalls": 7,
+        "toolCalls": 7,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "accessible_field_names",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "visible_submit_sends_values",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "pending_action_disabled",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "server_error_retains_input_and_live_feedback",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "invalid_email_has_associated_feedback",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "blank_name_stops_submission",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "narrow_layout_has_no_horizontal_overflow",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "large_text_controls_reachable_and_sized",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "keyboard_focus_order_and_activation",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "heading_and_brand_intent_preserved",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "reference.svg": "6c99ecadaeaf8b5613178b457d063e8a2608c7129ea90040fda201c167759f47",
+        "index.html": "d43e2a0ba2c561dcb86f88a0ecdedce975a75a1494c4288f7dc228c7d4aa8500",
+        "README.md": "05a219c5539d29c00c98eb2c4fa77266bb853fca48dac0a26ab7774d4edf0b3d",
+        "smoke.test.js": "430c81a51b4979e0b8bdf145bf0aab8e924c7375c0ad930566bd0bf63d9df265",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "c06ed2e9629193b76af2b830b21a9256e1eef2e8fc0cdd984fca3ae93dbb0440",
+        "AGENTS.md": "b165b83fcbb1c2610dd76005bf74448fa40964b0fdeb5b914461e90ccd85d2f9",
+        "app.js": "32245669cdb5a849443c3b4ad57b5a337b9b63837cfab37c6c23ce06b6418668"
+      },
+      "afterHashes": {
+        "reference.svg": "6c99ecadaeaf8b5613178b457d063e8a2608c7129ea90040fda201c167759f47",
+        "index.html": "b2f20f5e354ae335fc02602bfbf443d0aca59baae953c273e745dbade1db8262",
+        "README.md": "05a219c5539d29c00c98eb2c4fa77266bb853fca48dac0a26ab7774d4edf0b3d",
+        "smoke.test.js": "430c81a51b4979e0b8bdf145bf0aab8e924c7375c0ad930566bd0bf63d9df265",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "c06ed2e9629193b76af2b830b21a9256e1eef2e8fc0cdd984fca3ae93dbb0440",
+        "AGENTS.md": "b165b83fcbb1c2610dd76005bf74448fa40964b0fdeb5b914461e90ccd85d2f9",
+        "app.js": "f13226cf56e9327b21027a195b2819a53f1b020126687fe67838206fa580a183"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "37a32a573c74961c19a8250d0fa2083e9058016608227b6a394e639cae0f8f46",
+        "stderr.txt": "ae4ad1efa691aa64d06a89628f1ffcd10772e3b5f01da1124746058fb7b9270c",
+        "changes.diff": "ed2d69a0dc252b3c48629e221c105290ec2c5b342180968ead22be63ca6d9842"
+      }
+    },
+    {
+      "runId": "form-1-harness",
+      "task": "form",
+      "arm": "harness",
+      "repetition": 1,
+      "agentStatus": "TIMEOUT",
+      "elapsedSeconds": 240.00595500000003,
+      "events": {
+        "usage": null,
+        "completed": false,
+        "commandCalls": 6,
+        "toolCalls": 6,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "accessible_field_names",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "visible_submit_sends_values",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "pending_action_disabled",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "server_error_retains_input_and_live_feedback",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "invalid_email_has_associated_feedback",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "blank_name_stops_submission",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "narrow_layout_has_no_horizontal_overflow",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "large_text_controls_reachable_and_sized",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "keyboard_focus_order_and_activation",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "heading_and_brand_intent_preserved",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "reference.svg": "6c99ecadaeaf8b5613178b457d063e8a2608c7129ea90040fda201c167759f47",
+        "index.html": "d43e2a0ba2c561dcb86f88a0ecdedce975a75a1494c4288f7dc228c7d4aa8500",
+        "README.md": "05a219c5539d29c00c98eb2c4fa77266bb853fca48dac0a26ab7774d4edf0b3d",
+        "smoke.test.js": "430c81a51b4979e0b8bdf145bf0aab8e924c7375c0ad930566bd0bf63d9df265",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "c06ed2e9629193b76af2b830b21a9256e1eef2e8fc0cdd984fca3ae93dbb0440",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "9f52019dc5f634cfdc86a9b2e2ecca08ab24cd673a9a71c31dc6f7e16c867fdb",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84",
+        "app.js": "32245669cdb5a849443c3b4ad57b5a337b9b63837cfab37c6c23ce06b6418668"
+      },
+      "afterHashes": {
+        "reference.svg": "6c99ecadaeaf8b5613178b457d063e8a2608c7129ea90040fda201c167759f47",
+        "index.html": "d20b0b4c6ad433e7e38650041947e5f29193b045068521f106512676606af99c",
+        "README.md": "05a219c5539d29c00c98eb2c4fa77266bb853fca48dac0a26ab7774d4edf0b3d",
+        "smoke.test.js": "430c81a51b4979e0b8bdf145bf0aab8e924c7375c0ad930566bd0bf63d9df265",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "c06ed2e9629193b76af2b830b21a9256e1eef2e8fc0cdd984fca3ae93dbb0440",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "9f52019dc5f634cfdc86a9b2e2ecca08ab24cd673a9a71c31dc6f7e16c867fdb",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84",
+        "app.js": "5904bd8d21f88636ad6a2bd87d94896236e4805b628c381ab74a69e48b9c7663"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "ea5637ce92f6f45c0188360c0ba45fa9ca0b96b7ffea8394735c515fb0410c45",
+        "stderr.txt": "934c04a64bbe48b1fa484f2f94e63f92a28c5f52ce3f1e3907909a561a20e45e",
+        "changes.diff": "dc00bd2da1b3f767c91cf1195ad84a78049a4445ea4b949b0b44dbc2f95e1442"
+      }
+    },
+    {
+      "runId": "gates-1-control",
+      "task": "gates",
+      "arm": "control",
+      "repetition": 1,
+      "agentStatus": "COMPLETED",
+      "elapsedSeconds": 180.01753925000003,
+      "events": {
+        "usage": {
+          "input_tokens": 81334,
+          "cached_input_tokens": 49920,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5155,
+          "reasoning_output_tokens": 782
+        },
+        "completed": true,
+        "commandCalls": 8,
+        "toolCalls": 8,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "current_matching_evidence_passes",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "missing_required_gate_is_not_run",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "source_and_fixture_identity_checked",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "synthetic_evidence_cannot_pass_runtime",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "empty_artifacts_do_not_pass",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "duplicate_and_invalid_status_fail",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "undefined_scope_requires_review",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "nonpass_status_and_precedence_preserved",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "required_order_and_extra_result_handling",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "input_data_remains_unchanged",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "gates.js": "69167361f5b3760770763ea4bb8cce994c6c66ca629fd1ae6eaf1caeeebac200",
+        "README.md": "6d0ed8b7a175ae5bed5d9f6c1dfb95f31a0b065f11dca43c2d4fa61df99bd3fa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "6697adaac93a05bd93c8e573e9b49f69a09faba1a3985d69b47c0e86762190d8",
+        "gates.test.js": "0f409167ca25bb86da36f0e74357c918bf95a856b96a288620b119708ab15cd8",
+        "AGENTS.md": "912fe6fc9729b9ac18ce76e28e4e8e863797fc54ab21183e8be2807f3666d3ca"
+      },
+      "afterHashes": {
+        "gates.js": "8d67aef85706ae8d23765f621fb2eb369d9092c80eb0a447de74ac2e69ff49d4",
+        "gates.additional.test.js": "55b06391c712da31b66caf7e5329761927f4531449512231dc3a1ada01046b5f",
+        "FINAL_RESPONSE.md": "5d09b12e9298dda5f7590d618b01ac371f5c922d8c7235c174e7d109d87288a6",
+        "README.md": "6d0ed8b7a175ae5bed5d9f6c1dfb95f31a0b065f11dca43c2d4fa61df99bd3fa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "6697adaac93a05bd93c8e573e9b49f69a09faba1a3985d69b47c0e86762190d8",
+        "gates.test.js": "0f409167ca25bb86da36f0e74357c918bf95a856b96a288620b119708ab15cd8",
+        "AGENTS.md": "912fe6fc9729b9ac18ce76e28e4e8e863797fc54ab21183e8be2807f3666d3ca"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "357c1f147e82664bcf66d29453f2d07ebc318f2645c54efd534244c8c2d1a424",
+        "stderr.txt": "8848bcc81359fa53e4abc66208926baf117646a363abe09464d60d8d16e76c3c",
+        "changes.diff": "3c643a8555528cabced3c6e7f767f2d1d4d9477c07efda0398e7ae0fb2cf0a05",
+        "final-response.md": "5d09b12e9298dda5f7590d618b01ac371f5c922d8c7235c174e7d109d87288a6"
+      }
+    },
+    {
+      "runId": "gates-1-harness",
+      "task": "gates",
+      "arm": "harness",
+      "repetition": 1,
+      "agentStatus": "COMPLETED",
+      "elapsedSeconds": 239.11561387500004,
+      "events": {
+        "usage": {
+          "input_tokens": 154160,
+          "cached_input_tokens": 126464,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6566,
+          "reasoning_output_tokens": 1666
+        },
+        "completed": true,
+        "commandCalls": 12,
+        "toolCalls": 12,
+        "failedCommands": 1,
+        "fileChangeEvents": 2,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "current_matching_evidence_passes",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "missing_required_gate_is_not_run",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "source_and_fixture_identity_checked",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "synthetic_evidence_cannot_pass_runtime",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "empty_artifacts_do_not_pass",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "duplicate_and_invalid_status_fail",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "undefined_scope_requires_review",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "nonpass_status_and_precedence_preserved",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "required_order_and_extra_result_handling",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "input_data_remains_unchanged",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "gates.js": "69167361f5b3760770763ea4bb8cce994c6c66ca629fd1ae6eaf1caeeebac200",
+        "README.md": "6d0ed8b7a175ae5bed5d9f6c1dfb95f31a0b065f11dca43c2d4fa61df99bd3fa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "6697adaac93a05bd93c8e573e9b49f69a09faba1a3985d69b47c0e86762190d8",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "gates.test.js": "0f409167ca25bb86da36f0e74357c918bf95a856b96a288620b119708ab15cd8",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "65cb2bc383b6321a3a283d927757f77eb0f076a91280026267a14217d3718dc3",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84"
+      },
+      "afterHashes": {
+        "gates.js": "2690e1b3c4bd262015e32d2c716c9975295cfa3f98864aebaff292aa7670fea2",
+        "FINAL_RESPONSE.md": "6fe8e6519fe5d3462dbb5b063d8ab246b796bebc98478a156b0dfce590b8b137",
+        "README.md": "6d0ed8b7a175ae5bed5d9f6c1dfb95f31a0b065f11dca43c2d4fa61df99bd3fa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "6697adaac93a05bd93c8e573e9b49f69a09faba1a3985d69b47c0e86762190d8",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "gates.test.js": "0f409167ca25bb86da36f0e74357c918bf95a856b96a288620b119708ab15cd8",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "65cb2bc383b6321a3a283d927757f77eb0f076a91280026267a14217d3718dc3",
+        "gates.behavior.test.js": "29c9646fc6e5b8e931ebc18ddec617f0b731d05a8edca4aa5c6f69fbf8a87c92",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "8c2cab942c5219eaaf467bc86877fc142a8f4bd5ac10eaa2464c2e65d183d4f1",
+        "stderr.txt": "ca7d8da396d1af142595021950b1fbac15fcc421e299ab6e0727d44164b72d0f",
+        "changes.diff": "e33595374801fdf62209e4aff5478bb82c5bf1fe5856d05f2dbc932baf26d3a3",
+        "final-response.md": "6fe8e6519fe5d3462dbb5b063d8ab246b796bebc98478a156b0dfce590b8b137"
+      }
+    },
+    {
+      "runId": "gates-2-harness",
+      "task": "gates",
+      "arm": "harness",
+      "repetition": 2,
+      "agentStatus": "COMPLETED",
+      "elapsedSeconds": 236.47473312500003,
+      "events": {
+        "usage": {
+          "input_tokens": 117712,
+          "cached_input_tokens": 97920,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6276,
+          "reasoning_output_tokens": 1423
+        },
+        "completed": true,
+        "commandCalls": 10,
+        "toolCalls": 10,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "current_matching_evidence_passes",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "missing_required_gate_is_not_run",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "source_and_fixture_identity_checked",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "synthetic_evidence_cannot_pass_runtime",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "empty_artifacts_do_not_pass",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "duplicate_and_invalid_status_fail",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "undefined_scope_requires_review",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "nonpass_status_and_precedence_preserved",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "required_order_and_extra_result_handling",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "input_data_remains_unchanged",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "gates.js": "69167361f5b3760770763ea4bb8cce994c6c66ca629fd1ae6eaf1caeeebac200",
+        "README.md": "6d0ed8b7a175ae5bed5d9f6c1dfb95f31a0b065f11dca43c2d4fa61df99bd3fa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "6697adaac93a05bd93c8e573e9b49f69a09faba1a3985d69b47c0e86762190d8",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "gates.test.js": "0f409167ca25bb86da36f0e74357c918bf95a856b96a288620b119708ab15cd8",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "65cb2bc383b6321a3a283d927757f77eb0f076a91280026267a14217d3718dc3",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84"
+      },
+      "afterHashes": {
+        "gates.js": "3e287cf9ac62ec4f8c72569dbe03531ca574bdb5946ff1a36a4e59d2bcd931f2",
+        "FINAL_RESPONSE.md": "382230867ef383a47504049aba9c0c739d865863fbbf3dd18ac8fc3ce149b51f",
+        "README.md": "6d0ed8b7a175ae5bed5d9f6c1dfb95f31a0b065f11dca43c2d4fa61df99bd3fa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "6697adaac93a05bd93c8e573e9b49f69a09faba1a3985d69b47c0e86762190d8",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "gates.test.js": "0f409167ca25bb86da36f0e74357c918bf95a856b96a288620b119708ab15cd8",
+        "gates.validation.test.js": "e7a784ee1327816e71a7c821afb51ad4d2db28f5c02ff81833ca70467d54bbf2",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "65cb2bc383b6321a3a283d927757f77eb0f076a91280026267a14217d3718dc3",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "38e4ba995bb585ffe14b6bf9915255e80b540a90d4b3f2c4f43a924826b4656e",
+        "stderr.txt": "652209c16d6a80ae5bdbd694e5d127c6d3d9354e0a97bb4d71485bb9b971cac8",
+        "changes.diff": "d477c69f47955d3a6103c6eb45d97a3dbc6b2cdeb09195a8a742a4c6b67ca890",
+        "final-response.md": "382230867ef383a47504049aba9c0c739d865863fbbf3dd18ac8fc3ce149b51f"
+      }
+    },
+    {
+      "runId": "gates-2-control",
+      "task": "gates",
+      "arm": "control",
+      "repetition": 2,
+      "agentStatus": "COMPLETED",
+      "elapsedSeconds": 217.60095170800003,
+      "events": {
+        "usage": {
+          "input_tokens": 92303,
+          "cached_input_tokens": 62080,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6267,
+          "reasoning_output_tokens": 1376
+        },
+        "completed": true,
+        "commandCalls": 8,
+        "toolCalls": 8,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "current_matching_evidence_passes",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "missing_required_gate_is_not_run",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "source_and_fixture_identity_checked",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "synthetic_evidence_cannot_pass_runtime",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "empty_artifacts_do_not_pass",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "duplicate_and_invalid_status_fail",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "undefined_scope_requires_review",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "nonpass_status_and_precedence_preserved",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "required_order_and_extra_result_handling",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "input_data_remains_unchanged",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "gates.js": "69167361f5b3760770763ea4bb8cce994c6c66ca629fd1ae6eaf1caeeebac200",
+        "README.md": "6d0ed8b7a175ae5bed5d9f6c1dfb95f31a0b065f11dca43c2d4fa61df99bd3fa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "6697adaac93a05bd93c8e573e9b49f69a09faba1a3985d69b47c0e86762190d8",
+        "gates.test.js": "0f409167ca25bb86da36f0e74357c918bf95a856b96a288620b119708ab15cd8",
+        "AGENTS.md": "912fe6fc9729b9ac18ce76e28e4e8e863797fc54ab21183e8be2807f3666d3ca"
+      },
+      "afterHashes": {
+        "gates.requirements.test.js": "a6dd488b8f54dc0d990d9beb7c0ea24a9bd5b6c55f36e9034ff9637423750059",
+        "gates.js": "193d5fdd9d86e4c33fdd704818c6f0873b6e26ee6773c644081abcdf5a979da1",
+        "FINAL_RESPONSE.md": "356916fe56f31b2dd8a7175e1aab272162e0fe66ef8cc4e80f1143b4ab4abc4d",
+        "README.md": "6d0ed8b7a175ae5bed5d9f6c1dfb95f31a0b065f11dca43c2d4fa61df99bd3fa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "6697adaac93a05bd93c8e573e9b49f69a09faba1a3985d69b47c0e86762190d8",
+        "gates.test.js": "0f409167ca25bb86da36f0e74357c918bf95a856b96a288620b119708ab15cd8",
+        "AGENTS.md": "912fe6fc9729b9ac18ce76e28e4e8e863797fc54ab21183e8be2807f3666d3ca"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "6cff03b7858593c54d1f26105d8040e98d00276bceb4ac060e50a5f664ed0b33",
+        "stderr.txt": "c2bca5c7738c778d9ee1a80ad1c993102ba6c44e184d5a2d8f16beab925d94e2",
+        "changes.diff": "26395aab88372e22ccd050df0b157e34b636ed62b7ca2da07347141119c3c74a",
+        "final-response.md": "356916fe56f31b2dd8a7175e1aab272162e0fe66ef8cc4e80f1143b4ab4abc4d"
+      }
+    },
+    {
+      "runId": "form-2-harness",
+      "task": "form",
+      "arm": "harness",
+      "repetition": 2,
+      "agentStatus": "TIMEOUT",
+      "elapsedSeconds": 240.01118791699992,
+      "events": {
+        "usage": null,
+        "completed": false,
+        "commandCalls": 9,
+        "toolCalls": 9,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "accessible_field_names",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "visible_submit_sends_values",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "pending_action_disabled",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "server_error_retains_input_and_live_feedback",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "invalid_email_has_associated_feedback",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "blank_name_stops_submission",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "narrow_layout_has_no_horizontal_overflow",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "large_text_controls_reachable_and_sized",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "keyboard_focus_order_and_activation",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "heading_and_brand_intent_preserved",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "reference.svg": "6c99ecadaeaf8b5613178b457d063e8a2608c7129ea90040fda201c167759f47",
+        "index.html": "d43e2a0ba2c561dcb86f88a0ecdedce975a75a1494c4288f7dc228c7d4aa8500",
+        "README.md": "05a219c5539d29c00c98eb2c4fa77266bb853fca48dac0a26ab7774d4edf0b3d",
+        "smoke.test.js": "430c81a51b4979e0b8bdf145bf0aab8e924c7375c0ad930566bd0bf63d9df265",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "c06ed2e9629193b76af2b830b21a9256e1eef2e8fc0cdd984fca3ae93dbb0440",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "9f52019dc5f634cfdc86a9b2e2ecca08ab24cd673a9a71c31dc6f7e16c867fdb",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84",
+        "app.js": "32245669cdb5a849443c3b4ad57b5a337b9b63837cfab37c6c23ce06b6418668"
+      },
+      "afterHashes": {
+        "reference.svg": "6c99ecadaeaf8b5613178b457d063e8a2608c7129ea90040fda201c167759f47",
+        "index.html": "a07fdefab0ac2d543994c9867cf9aa06ab17cb7bca484aa7acd82781737ef8b3",
+        "README.md": "05a219c5539d29c00c98eb2c4fa77266bb853fca48dac0a26ab7774d4edf0b3d",
+        "smoke.test.js": "430c81a51b4979e0b8bdf145bf0aab8e924c7375c0ad930566bd0bf63d9df265",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "c06ed2e9629193b76af2b830b21a9256e1eef2e8fc0cdd984fca3ae93dbb0440",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "9f52019dc5f634cfdc86a9b2e2ecca08ab24cd673a9a71c31dc6f7e16c867fdb",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84",
+        "app.js": "032bd1f981d5d497e942abc681d35e3984608477eb3e04dee3a9cac229d3edcb"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "4e4b86403fb514e343c90eb292a8e850aa01bba066187066f66e48173175feba",
+        "stderr.txt": "73ac8be14ae74f0d34bfa2de9ff9f16d8d2611976771c1333f7742dd89cdf4cf",
+        "changes.diff": "83aca107c3aaccd2adb59e02e36a6f392d09890beab07c56bd37d97a916c6948"
+      }
+    },
+    {
+      "runId": "form-2-control",
+      "task": "form",
+      "arm": "control",
+      "repetition": 2,
+      "agentStatus": "TIMEOUT",
+      "elapsedSeconds": 240.00456095800013,
+      "events": {
+        "usage": null,
+        "completed": false,
+        "commandCalls": 8,
+        "toolCalls": 8,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "accessible_field_names",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "visible_submit_sends_values",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "pending_action_disabled",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "server_error_retains_input_and_live_feedback",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "invalid_email_has_associated_feedback",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "blank_name_stops_submission",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "narrow_layout_has_no_horizontal_overflow",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "large_text_controls_reachable_and_sized",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "keyboard_focus_order_and_activation",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "heading_and_brand_intent_preserved",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "reference.svg": "6c99ecadaeaf8b5613178b457d063e8a2608c7129ea90040fda201c167759f47",
+        "index.html": "d43e2a0ba2c561dcb86f88a0ecdedce975a75a1494c4288f7dc228c7d4aa8500",
+        "README.md": "05a219c5539d29c00c98eb2c4fa77266bb853fca48dac0a26ab7774d4edf0b3d",
+        "smoke.test.js": "430c81a51b4979e0b8bdf145bf0aab8e924c7375c0ad930566bd0bf63d9df265",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "c06ed2e9629193b76af2b830b21a9256e1eef2e8fc0cdd984fca3ae93dbb0440",
+        "AGENTS.md": "b165b83fcbb1c2610dd76005bf74448fa40964b0fdeb5b914461e90ccd85d2f9",
+        "app.js": "32245669cdb5a849443c3b4ad57b5a337b9b63837cfab37c6c23ce06b6418668"
+      },
+      "afterHashes": {
+        "reference.svg": "6c99ecadaeaf8b5613178b457d063e8a2608c7129ea90040fda201c167759f47",
+        "index.html": "58b6b19692dd5691cfad0b7cc6e16c59fba3abe9c7291ed443c3b94b969dd289",
+        "README.md": "05a219c5539d29c00c98eb2c4fa77266bb853fca48dac0a26ab7774d4edf0b3d",
+        "smoke.test.js": "430c81a51b4979e0b8bdf145bf0aab8e924c7375c0ad930566bd0bf63d9df265",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "c06ed2e9629193b76af2b830b21a9256e1eef2e8fc0cdd984fca3ae93dbb0440",
+        "AGENTS.md": "b165b83fcbb1c2610dd76005bf74448fa40964b0fdeb5b914461e90ccd85d2f9",
+        "app.js": "f915518b5f228d679e40fb02652c35f987ee9ac2e094dbad5cb76dac3a6388be"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "d5c9125f95063ec710dd3406ff27a0af05d8a1fb0e8e9fa2fe4c3b18cc414a4d",
+        "stderr.txt": "2032a5abafaba89996c9a792dde702bb05425f9e08ec17695caf9aeaa61e91a5",
+        "changes.diff": "3c46c5f71d1338beef582ed7d395d74d9b179f5c903021cec88dd8e84ee4e00b"
+      }
+    },
+    {
+      "runId": "editor-2-harness",
+      "task": "editor",
+      "arm": "harness",
+      "repetition": 2,
+      "agentStatus": "COMPLETED",
+      "elapsedSeconds": 235.03078816700005,
+      "events": {
+        "usage": {
+          "input_tokens": 117023,
+          "cached_input_tokens": 93440,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6498,
+          "reasoning_output_tokens": 1194
+        },
+        "completed": true,
+        "commandCalls": 14,
+        "toolCalls": 14,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "trimmed_payload_preserved_draft",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "observable_pending_state",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "duplicate_submit_suppression",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "failure_preserves_input_and_explicit_retry",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "late_response_does_not_overwrite_edits",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "blank_input_stops_request",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "snapshot_cannot_mutate_store",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "unknown_outcome_does_not_resubmit",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "reconcile_uses_lookup_and_blocks_submit",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "lookup_failure_and_pending_remain_unknown",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "README.md": "d31011a7b7d83cbca15197530433b4b78ab9513b5a8b5d05bf3a990bef61bc7d",
+        "editor.js": "0298aae7e576eb1a3b77a4e5cd9da3841a779e1232d45eaa2274d023adc9dcfa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "70a7f8315a5c33e87f37d60c1d7d9a9fff2236f52ba96279fc0d19aa93babf85",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "6e66a5ab0ed5882a8bda85fad3efe4a1ab6917fb7fa9bfaa06d3daa984ae965b",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84",
+        "editor.test.js": "9e95cbdd137b409adab968b000abc87c79d2f744aecd9dbfa33e0bcc1e64f644"
+      },
+      "afterHashes": {
+        "editor.behavior.test.js": "8398a17ac8ca4a111427614a53ec5a5ae8a5e6870b4c612b5917e0bdc08baaba",
+        "FINAL_RESPONSE.md": "e24b8afbf38cc2f667ad996c835a3242109fd4963fb70c30e431e615941f3da8",
+        "README.md": "d31011a7b7d83cbca15197530433b4b78ab9513b5a8b5d05bf3a990bef61bc7d",
+        "editor.js": "3026c51beda280e5d737d8bfa57636fb5080d1b244e256348a74636402c65d5d",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "70a7f8315a5c33e87f37d60c1d7d9a9fff2236f52ba96279fc0d19aa93babf85",
+        ".harness/ux-loop/architecture.md": "186dc401c6ad371bb00af0707df3a3f2ec8684d6cc8bea659a08cf09d7434880",
+        ".harness/ux-loop/repair-delivery.md": "9290cba468af0b060bf0dea52a4051ec502a691d22f310c53c5093ae0e718903",
+        ".harness/ux-loop/project.md": "4b090647f2f8cb2e496d0b6e4677142e036b6cd701e3df96e317ad25feb289ae",
+        ".harness/ux-loop/README.md": "f62dd59c86f59a28fbbd65a4728adbf218c219da84808ce8a526cc6b7a2f6328",
+        ".harness/ux-loop/verification.md": "67bd7bb1b93eee9e48a49bb49782cf3a70c996580d019ff47e60ffc6adb695c2",
+        ".harness/ux-loop/LICENSE.txt": "2e6889818c6ea5abe3196072043d92c971ae118c7f6d77440ab6ef43d5add40e",
+        ".harness/ux-loop/kmp-cmp.md": "503b742ea169ae4a5acaa9022d8d6c477abf74459de3879f527a24c57b1c73c3",
+        ".harness/ux-loop/design-ux.md": "d11d7c86b15ae18367c702cc0624b9780dc210dcc46b72fd661f94cc581a23a5",
+        "GEMINI.md": "0bd7982924e374b9a0eaec3b9fd4890909286cebf11a874030154f1a8b59889d",
+        "AGENTS.md": "6e66a5ab0ed5882a8bda85fad3efe4a1ab6917fb7fa9bfaa06d3daa984ae965b",
+        "CLAUDE.md": "41ce2bdba09c19f2b3bd0465e8795217dcf10bfd54767064290d2ecce430ed84",
+        "editor.test.js": "9e95cbdd137b409adab968b000abc87c79d2f744aecd9dbfa33e0bcc1e64f644"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "94cf0d700e29e053c16a19d47e1695045d401680e67bf911abfdc7403d60ab84",
+        "stderr.txt": "4422ab33122c8a3dfb161734acdcd98032e457befffa96b925f245bd6c76888f",
+        "changes.diff": "0f908d957531588926dd0be47fb72896e591d0b6448d8d65037aaf82166b1a2d",
+        "final-response.md": "e24b8afbf38cc2f667ad996c835a3242109fd4963fb70c30e431e615941f3da8"
+      }
+    },
+    {
+      "runId": "editor-2-control",
+      "task": "editor",
+      "arm": "control",
+      "repetition": 2,
+      "agentStatus": "COMPLETED",
+      "elapsedSeconds": 182.006615916,
+      "events": {
+        "usage": {
+          "input_tokens": 78185,
+          "cached_input_tokens": 60160,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5204,
+          "reasoning_output_tokens": 1200
+        },
+        "completed": true,
+        "commandCalls": 8,
+        "toolCalls": 8,
+        "failedCommands": 0,
+        "fileChangeEvents": 1,
+        "malformedLines": 0
+      },
+      "integrityViolations": [],
+      "checks": [
+        {
+          "id": "trimmed_payload_preserved_draft",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "observable_pending_state",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "duplicate_submit_suppression",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "failure_preserves_input_and_explicit_retry",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "late_response_does_not_overwrite_edits",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "blank_input_stops_request",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "snapshot_cannot_mutate_store",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "unknown_outcome_does_not_resubmit",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "reconcile_uses_lookup_and_blocks_submit",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        },
+        {
+          "id": "lookup_failure_and_pending_remain_unknown",
+          "pass": true,
+          "detail": "Assertions satisfied"
+        }
+      ],
+      "evaluatorError": null,
+      "promptHash": "10a010a9fc37e42fd232bb9598b9b51f991ac498b67e8e7423ad356fdc6df8a6",
+      "baselineHashes": {
+        "README.md": "d31011a7b7d83cbca15197530433b4b78ab9513b5a8b5d05bf3a990bef61bc7d",
+        "editor.js": "0298aae7e576eb1a3b77a4e5cd9da3841a779e1232d45eaa2274d023adc9dcfa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "70a7f8315a5c33e87f37d60c1d7d9a9fff2236f52ba96279fc0d19aa93babf85",
+        "AGENTS.md": "d433eb5803f417d752421d706ddb4e2599ca9ea3c22ff6924033ffd784dc57b4",
+        "editor.test.js": "9e95cbdd137b409adab968b000abc87c79d2f744aecd9dbfa33e0bcc1e64f644"
+      },
+      "afterHashes": {
+        "editor.behavior.test.js": "d2e7dbdf338f82321cb1e25d92e976e7b705ee1e7dd46e2806823a55b89eef28",
+        "FINAL_RESPONSE.md": "365610f584d6b34a893e5c34f138832a38c9497cff4baa2d4f72363d3bf7c2b4",
+        "README.md": "d31011a7b7d83cbca15197530433b4b78ab9513b5a8b5d05bf3a990bef61bc7d",
+        "editor.js": "48d18720c4162b03c4fb2e28c034580ad22c22862ae5e57e99a6b4a314c192aa",
+        ".gitignore": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97",
+        "package.json": "70a7f8315a5c33e87f37d60c1d7d9a9fff2236f52ba96279fc0d19aa93babf85",
+        "AGENTS.md": "d433eb5803f417d752421d706ddb4e2599ca9ea3c22ff6924033ffd784dc57b4",
+        "editor.test.js": "9e95cbdd137b409adab968b000abc87c79d2f744aecd9dbfa33e0bcc1e64f644"
+      },
+      "rawEvidenceSha256": {
+        "events.jsonl": "65843fbe9d191c689c6a050ae6257da7c23583dceb1c850ccee77d8d7e328cc5",
+        "stderr.txt": "5081b75a360938a1ae982e70817280aba6c4567fdd512e426abd3faeed7be2e0",
+        "changes.diff": "7bbb55a01b7c9165d5aa217d99b2ba949e1b15a28751bca0d7fae01df11315c1",
+        "final-response.md": "365610f584d6b34a893e5c34f138832a38c9497cff4baa2d4f72363d3bf7c2b4"
+      }
+    }
+  ]
+}

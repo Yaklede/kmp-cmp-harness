@@ -5,7 +5,7 @@
   "scripts": {
     "test": "bun test ./tests",
     "run": "bun run.ts",
-    "summarize": "bun summarize.ts"
+    "summarize": "bun ../../scripts/report-benchmark.ts"
   },
   "devDependencies": { "playwright": "1.63.0" }
 }
