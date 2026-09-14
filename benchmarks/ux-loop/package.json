@@ -1,0 +1,11 @@
+{
+  "name": "ux-loop-ab-benchmark",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test ./tests",
+    "run": "bun run.ts",
+    "summarize": "bun summarize.ts"
+  },
+  "devDependencies": { "playwright": "1.63.0" }
+}

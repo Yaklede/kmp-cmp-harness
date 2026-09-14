@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="560" viewBox="0 0 390 560">
+  <rect width="390" height="560" fill="#f6f7fb"/>
+  <g font-family="sans-serif" fill="#17233d">
+    <text x="24" y="64" font-size="28" font-weight="700">프로필 수정</text>
+    <text x="24" y="140" font-size="16">이름</text>
+    <rect x="24" y="154" width="342" height="52" rx="8" fill="white" stroke="#8a96ad"/>
+    <text x="24" y="250" font-size="16">이메일</text>
+    <rect x="24" y="264" width="342" height="52" rx="8" fill="white" stroke="#8a96ad"/>
+    <rect x="24" y="408" width="342" height="52" rx="8" fill="#2156df"/>
+    <text x="179" y="441" font-size="18" fill="white">저장</text>
+  </g>
+</svg>
